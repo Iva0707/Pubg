@@ -122,18 +122,163 @@ a {
 
 .ul_second li {
     position: relative;
-    padding-left: 28px;
+    padding-left: 35px;
 }
 
 .ul_second li:before {
-    content: "111";
+    content: "";
     position: absolute;
     background: url('assets/img/icon_check.svg') no-repeat;
-    width: 40px;
-    height: 40px;
+    width: 23px;
+    height: 18px;
     left: 0px;
-    top: 0px;
+    top: 3px;
 }
+
+.ul_third li {
+    position: relative;
+    padding-left: 35px;
+}
+
+.ul_third li:before {
+    content: "";
+    position: absolute;
+    background: url('assets/img/icon_close.svg') no-repeat;
+    width: 18px;
+    height: 18px;
+    left: 0px;
+    top: 3px;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+
+.fw_800 {
+    font-weight: 800;
+}
+
+h1,
+.h1 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+h2,
+.h2 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+h3,
+.h3 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+h4,
+.h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h5,
+.h5 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+h6,
+.h6 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.markup__buttons_container button {
+    margin-bottom: 10px;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 20px 47px;
+    background: linear-gradient(157deg, #ff9b05 0%, #ff8f3f 100%);
+    border: none;
+}
+
+
+.btn-info {
+    padding: 24px 34px 24px 43px;    
+    .icon {
+        margin-left: 36px;
+        transition: 0.3s;
+    }
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(169deg, #05ffff 0%, #11d4ff 100%);
+    padding: 24px 38px
+}
+
+.btn-primary {
+    padding: 25px 34px 25px 35px;
+    .icon {
+        margin-left: 18px;
+        transition: 0.3s;
+    }
+}
+
+.btn-warning {
+    padding: 22px 29px 22px 29px;
+    background: #ff3b3b;
+    .icon {
+        margin-left: 18px;;
+        transition: 0.3s;
+    }
+}
+
+.btn-lg {
+    padding: 24px 100px 24px 130px;
+    box-shadow: 0 20px 35px 0 #00000014;
+    border-radius: 0 0 5px 55px;
+    background: linear-gradient(157deg, #ff8f3f 0%, #ff9b05 100%);
+    text-wrap: nowrap;
+    .icon {
+        margin-left: 22px;
+        transition: 0.3s;
+    }
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    color: #2e3a59;
+    background: linear-gradient(174deg, #0aa6fe 0%, #05ffff 100%);
+    transition: 0.3s;
+
+}
+
+.btn:hover .icon {
+    filter: invert(100%) sepia(0%) saturate(0%) brightness(180%) contrast(101%);
+}
+
+
 
 
 
