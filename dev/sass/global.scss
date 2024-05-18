@@ -3,8 +3,8 @@ body {
 }
 
 ::selection {
-    background-color: #82e9ff;
-    color: #2e3a59;
+    background-color: $color-select;
+    color: $subtitle-color;
 }
 
 ul li,
@@ -13,7 +13,7 @@ ol li {
 }
 
 a {
-    color: #0aa6fe;
+    color: $color-link;
     text-decoration: underline;
 }
 
@@ -31,6 +31,16 @@ a {
     padding-right: 30px;
 }
 
+.col-md-4 {
+    padding: 10px;
+}
+
+.markup__color_container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $subtitle-color;
+}
 .color__item {
     max-width: 300px;
     height: 100px;
@@ -38,70 +48,74 @@ a {
 }
 
 .color__item_1 {
-    background: linear-gradient(151deg, #1a47ea 0%, #82e9ff 100%);
+    background: $gradient-first;
 }
 
 .color__item_2 {
-    background: linear-gradient(157deg, #ff9b05 0%, #ff8f3f 100%);
+    background: $gradient-second;
 }
 
 .color__item_3 {
-    background: linear-gradient(163deg, #05ffff 0%, #0aa6fe 100%);
+    background: $gradient-third;
 }
 
 .color__item_4 {
-    background: linear-gradient(79deg, #dda6ff 0%, #d828f4 100%);
+    background: $gradient-fourth;
 }
 
 .color__item_5 {
-    background: linear-gradient(162deg, #ff9898 0%, #ff1f00 100%);
+    background: $gradient-fifth;
 }
 
 .color__item_6 {
-    background: linear-gradient(174deg, #0aa6fe 0%, #05ffff 100%);
+    background: $gradient-sixth;
 }
 
 .color__item_7 {
-    background-color: #ff3b3b;
+    background-color: $color-red;
 }
 
 .color__item_8 {
-    background-color: #0aa6fe;
+    background-color: $color-blue;
 }
 
 .color__item_9 {
     background: transparent;
     border: 1px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(169deg, #05ffff 0%, #11d4ff 100%);
+    border-image-source: $gradient-border;
+}
+
+.color__item_10 {
+    background: $gradient-seventh;
+}
+
+.markup__text_container span {
+    background: $color-select;
 }
 
 .title_color {
-    color: #ffffff;
+    color: $title-color;
 }
 
 .subtitle_color {
-    color: #2e3a59;
-}
-
-.text_color_primary {
-    color: #ffffff;
+    color: $subtitle-color;
 }
 
 .text_color_secondary {
-    color: #828282;
+    color: $text-color-secondary;
 }
 
 .text_color_accent {
-    color: #0aa6fe;
+    color: $text-color-accent;
 }
 
 .text_color_light {
-    color: #727272;
+    color: $text-color-light;
 }
 
 .text_color_placeholder {
-    color: #2e3a596e;
+    color: $text-color-placeholder;
 }
 
 .ul_first li {
@@ -112,7 +126,7 @@ a {
 .ul_first li:before {
     content: "";
     position: absolute;
-    background-color: #FB8500;
+    background-color: $color-first-before;
     width: 10px;
     height: 10px;
     transform: rotate(45deg);
@@ -212,16 +226,17 @@ h6,
 .btn {
     font-weight: 600;
     font-size: 18px;
-    color: #ffffff;
+    color: $title-color;
     border-radius: 5px;
     padding: 20px 47px;
-    background: linear-gradient(157deg, #ff9b05 0%, #ff8f3f 100%);
+    background: $gradient-second;
     border: none;
 }
 
 
 .btn-info {
-    padding: 24px 34px 24px 43px;    
+    padding: 24px 34px 24px 43px;  
+    box-shadow: 0 20px 35px 0 $color-bnt-shadow;  
     .icon {
         margin-left: 36px;
         transition: 0.3s;
@@ -232,12 +247,13 @@ h6,
     background: transparent;
     border: 1px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(169deg, #05ffff 0%, #11d4ff 100%);
+    border-image-source: $gradient-border;
     padding: 24px 38px
 }
 
 .btn-primary {
     padding: 25px 34px 25px 35px;
+    box-shadow: 0 20px 35px 0 $color-bnt-shadow;
     .icon {
         margin-left: 18px;
         transition: 0.3s;
@@ -246,7 +262,7 @@ h6,
 
 .btn-warning {
     padding: 22px 29px 22px 29px;
-    background: #ff3b3b;
+    background: $color-red;
     .icon {
         margin-left: 18px;;
         transition: 0.3s;
@@ -255,9 +271,9 @@ h6,
 
 .btn-lg {
     padding: 24px 100px 24px 130px;
-    box-shadow: 0 20px 35px 0 #00000014;
+    box-shadow: 0 20px 35px 0 $color-bnt-shadow;
     border-radius: 0 0 5px 55px;
-    background: linear-gradient(157deg, #ff8f3f 0%, #ff9b05 100%);
+    background: $gradient-seventh;
     text-wrap: nowrap;
     .icon {
         margin-left: 22px;
@@ -268,18 +284,11 @@ h6,
 .btn:hover,
 .btn:active,
 .btn:focus {
-    color: #2e3a59;
-    background: linear-gradient(174deg, #0aa6fe 0%, #05ffff 100%);
+    color: $subtitle-color;
+    background: $gradient-sixth;
     transition: 0.3s;
-
 }
 
 .btn:hover .icon {
     filter: invert(100%) sepia(0%) saturate(0%) brightness(180%) contrast(101%);
 }
-
-
-
-
-
-
