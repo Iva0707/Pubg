@@ -121,9 +121,7 @@ a {
 .ul_first li {
     position: relative;
     padding-left: 28px;
-}
-
-.ul_first li:before {
+    &:before {
     content: "";
     position: absolute;
     background-color: $color-first-before;
@@ -132,14 +130,13 @@ a {
     transform: rotate(45deg);
     left: 0px;
     top: 7px;
+    }
 }
 
 .ul_second li {
     position: relative;
     padding-left: 35px;
-}
-
-.ul_second li:before {
+    &:before {
     content: "";
     position: absolute;
     background: url('assets/img/icon_check.svg') no-repeat;
@@ -147,14 +144,13 @@ a {
     height: 18px;
     left: 0px;
     top: 3px;
+    }
 }
 
 .ul_third li {
     position: relative;
     padding-left: 35px;
-}
-
-.ul_third li:before {
+    &:before {
     content: "";
     position: absolute;
     background: url('assets/img/icon_close.svg') no-repeat;
@@ -162,6 +158,7 @@ a {
     height: 18px;
     left: 0px;
     top: 3px;
+    }
 }
 
 .fw_400 {
@@ -231,6 +228,7 @@ h6,
     padding: 20px 47px;
     background: $gradient-second;
     border: none;
+    text-wrap: nowrap;
 }
 
 
@@ -244,11 +242,29 @@ h6,
 }
 
 .btn-secondary {
+    position: relative;
+    padding: 24px 38px;
     background: transparent;
-    border: 1px solid;
-    border-image-slice: 1;
-    border-image-source: $gradient-border;
-    padding: 24px 38px
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 5px;
+      padding: 1px;
+      background: $gradient-border;
+      mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      z-index: -1;
+    }
 }
 
 .btn-primary {
@@ -274,7 +290,6 @@ h6,
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
     border-radius: 0 0 5px 55px;
     background: $gradient-seventh;
-    text-wrap: nowrap;
     .icon {
         margin-left: 22px;
         transition: 0.3s;
@@ -289,6 +304,12 @@ h6,
     transition: 0.3s;
 }
 
+.btn-secondary:hover:before,
+.btn-secondary:active:before,
+.btn-secondary:focus:before {
+    background: $gradient-sixth;
+}
+
 .btn:hover .icon {
     filter: invert(100%) sepia(0%) saturate(0%) brightness(180%) contrast(101%);
-}
+}  
