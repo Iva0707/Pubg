@@ -1,0 +1,140 @@
+body {
+    background-color: $background-color;
+}
+
+::selection {
+    background-color: #82e9ff;
+    color: #2e3a59;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+a {
+    color: #0aa6fe;
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.color__item {
+    max-width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.color__item_1 {
+    background: linear-gradient(151deg, #1a47ea 0%, #82e9ff 100%);
+}
+
+.color__item_2 {
+    background: linear-gradient(157deg, #ff9b05 0%, #ff8f3f 100%);
+}
+
+.color__item_3 {
+    background: linear-gradient(163deg, #05ffff 0%, #0aa6fe 100%);
+}
+
+.color__item_4 {
+    background: linear-gradient(79deg, #dda6ff 0%, #d828f4 100%);
+}
+
+.color__item_5 {
+    background: linear-gradient(162deg, #ff9898 0%, #ff1f00 100%);
+}
+
+.color__item_6 {
+    background: linear-gradient(174deg, #0aa6fe 0%, #05ffff 100%);
+}
+
+.color__item_7 {
+    background-color: #ff3b3b;
+}
+
+.color__item_8 {
+    background-color: #0aa6fe;
+}
+
+.color__item_9 {
+    background: transparent;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(169deg, #05ffff 0%, #11d4ff 100%);
+}
+
+.title_color {
+    color: #ffffff;
+}
+
+.subtitle_color {
+    color: #2e3a59;
+}
+
+.text_color_primary {
+    color: #ffffff;
+}
+
+.text_color_secondary {
+    color: #828282;
+}
+
+.text_color_accent {
+    color: #0aa6fe;
+}
+
+.text_color_light {
+    color: #727272;
+}
+
+.text_color_placeholder {
+    color: #2e3a596e;
+}
+
+.ul_first li {
+    position: relative;
+    padding-left: 28px;
+}
+
+.ul_first li:before {
+    content: "";
+    position: absolute;
+    background-color: #FB8500;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    left: 0px;
+    top: 7px;
+}
+
+.ul_second li {
+    position: relative;
+    padding-left: 28px;
+}
+
+.ul_second li:before {
+    content: "111";
+    position: absolute;
+    background: url('assets/img/icon_check.svg') no-repeat;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+
