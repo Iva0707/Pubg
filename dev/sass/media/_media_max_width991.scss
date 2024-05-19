@@ -1,0 +1,107 @@
+@media screen and (max-width: 991px) {
+    .header_container {
+        padding: 0px 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .header_logo {
+        order: 2;
+    }
+
+    .burger_container {
+        height: 13px;
+        width: 35px;
+    }
+
+    .burger {
+        display: inline-block !important;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: white;
+            height: 1px;
+            width: 35px;
+            left: 0;
+            transition: .3s;
+        }
+        &:before {
+            top: 0px;
+        }
+        &:after {
+            top: 12px;
+        }
+        &:hover:before,
+        &:hover:after {
+            box-shadow: 20px 20px 35px 0 $color-bnt-shadow;
+        }
+    }
+
+    .burger.show {
+        &:before {
+            top: 6px;
+            transform: rotate(45deg);
+            transition: .3s;
+        }
+        &:after {
+            top: 6px;
+            transform: rotate(-45deg);
+            transition: .3s;
+        }
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: flex-start;
+        order: 1;
+        position: absolute;
+        top: 66px;
+        left: 15px;
+        gap: 35px;
+        padding: 35px 50px;
+        background: $background-color;
+        box-shadow: 0 20px 35px 0 $color-bnt-shadow;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        opacity: 0;
+        transform: translateX(-120%);
+        transition: .3s;
+        a {
+            color: $subtitle-color;
+        }
+        &.show {
+            opacity: 1;
+            transform: translateX(0);
+            transition: .3s;
+        }
+    }
+
+    .header_select {
+        order: 3;
+    }
+
+    .nice-select {
+        font-size: 12px;
+        padding-left: 38px;
+        padding-right: 9px;
+        height: 36px;
+    }
+
+    .nice-select:after {
+        display: none;
+    }
+    
+    .nice-select.open:after {
+        display: none;
+    }
+
+    .header_btn {
+        display: none;
+    }
+}
+
+

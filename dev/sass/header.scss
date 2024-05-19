@@ -6,12 +6,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 84px;
+    padding: 0px 50px;
     margin-top: 33px;
     margin-bottom: 33px;
-    position: relative;
-    border: 2px solid black;
-
     a {
         text-decoration: none;
     }
@@ -25,43 +22,37 @@ header {
 .nav_list {
     display: flex;
     gap: 80px;
-
+    padding-left: 20px;
+    padding-right: 20px;
     a {
         font-weight: 700;
         font-size: 17px;
         color: $title-color;
         position: relative;
     }
-
     a:hover {
         transform: scale(1.1);
         transition: .3s;
     }
-
+    a:after,
     a:before {
         content: '';
         position: absolute;
         height: 3px;
         width: 0px;
         bottom: 0px;
-        left: 50%;
         background: $color-first-before;
+    }
+    a:before {
+        left: 50%;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-
     a:after {
-        content: '';
-        position: absolute;
-        height: 3px;
-        width: 0px;
-        bottom: 0px;
         right: 50%;
-        background: $color-first-before;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
-
     a:hover:after,
     a:hover:before {
         width: 50%;
@@ -81,68 +72,54 @@ header {
     align-items: center;
     color: $subtitle-color;
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
+    margin-right: 15px;
+}
+
+.nice-select:after,
+.nice-select.open:after {
+    border: 7px solid transparent;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .nice-select:after {
-    border: 7px solid transparent;
     border-bottom: 7px solid $subtitle-color;
     top: 22px;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-
 }
 
 .nice-select.open:after {
-    border: 7px solid transparent;
     border-top: 7px solid $subtitle-color;
     top: 30px;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
 }
 
-.language_ru {
-    position: relative;
-}
-
-.language_ru:before {
-    content: '';
-    position: absolute;
-    background: url('assets/img/icon_ru.svg') no-repeat;
-    top: 15px;
-    left: 16px;
-    height: 100%;
-    width: 40px;
-    z-index: 10;
-}
-.language_ua {
-    position: relative;
-}
-
-.language_ua:before {
-    content: '';
-    position: absolute;
-    background: url('assets/img/icon_ua.svg') no-repeat;
-    top: 15px;
-    left: 16px;
-    height: 100%;
-    width: 40px;
-    z-index: 10;
-}
+.language_ru,
+.language_ua,
 .language_en {
     position: relative;
 }
 
+.language_ru:before,
+.language_ua:before,
 .language_en:before {
     content: '';
     position: absolute;
-    background: url('assets/img/icon_eng.svg') no-repeat;
     top: 15px;
     left: 16px;
     height: 100%;
     width: 40px;
-    z-index: 10;
+}
+
+.language_ru:before {
+    background: url('assets/img/icon_ru.svg') no-repeat;
+}
+
+.language_ua:before {
+    background: url('assets/img/icon_ua.svg') no-repeat;
+}
+
+.language_en:before {
+    background: url('assets/img/icon_eng.svg') no-repeat;
 }
 
 .header_btn {
@@ -151,7 +128,4 @@ header {
     border: none;
     border-radius: 5px;
     padding: 17px 26px;
-    position: absolute;
-    right: -15px;
-    top: -1px;
 }
