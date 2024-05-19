@@ -1,3 +1,46 @@
-header {
 
+
+header {
+    background: url('assets/img/backgroung.png') center top/1920px no-repeat;
+    ;
 }
+
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 84px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.header_logo {
+    font-size: 17px;
+    color: $title-color;
+}
+
+.nav_list {
+    display: flex;
+    gap: 80px;
+
+    a {
+        font-weight: 700;
+        font-size: 17px;
+        color: $title-color;
+    }
+}
+
+.nice-select {
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    height: 58px;
+    padding-left: 61px;
+    padding-right: 36px;
+    transition: .3s;
+}
+
+
+

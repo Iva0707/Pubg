@@ -13,8 +13,18 @@ ol li {
 }
 
 a {
-    color: $color-link;
+    color: $color-blue;
     text-decoration: underline;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: $color-first-before;
+    text-decoration: underline;
+    &:focus {
+        outline: none;
+    }
 }
 
 * {
@@ -24,7 +34,7 @@ a {
 }
 
 .container {
-    max-width: 1420px;
+    max-width: 1488px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px;
@@ -107,7 +117,7 @@ a {
 }
 
 .text_color_accent {
-    color: $text-color-accent;
+    color: $color-blue;
 }
 
 .text_color_light {
