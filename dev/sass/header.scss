@@ -41,17 +41,18 @@ header {
         height: 3px;
         width: 0px;
         bottom: 0px;
-        background: $color-first-before;
     }
     a:before {
         left: 50%;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
+        background: $gradient-seventh;
     }
     a:after {
         right: 50%;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        background: $gradient-second;
     }
     a:hover:after,
     a:hover:before {
@@ -73,24 +74,30 @@ header {
     color: $subtitle-color;
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
     margin-right: 15px;
-}
-
-.nice-select:after,
-.nice-select.open:after {
+    &:after,
+    &.open:after {
     border: 7px solid transparent;
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
-}
-
-.nice-select:after {
-    border-bottom: 7px solid $subtitle-color;
-    top: 22px;
-}
-
-.nice-select.open:after {
-    border-top: 7px solid $subtitle-color;
-    top: 30px;
+    }
+    &:after {
+        border-bottom: 7px solid $subtitle-color;
+        top: 22px;
+    }
+    &.open:after {
+        border-top: 7px solid $subtitle-color;
+        top: 30px;
+    }
+    &.option:hover,
+    &.option.focus,
+    &.option.selected.focus {
+    background-color: $background-color;
+    }
+    &.open .list {
+        box-shadow: 0 20px 35px 0 $color-bnt-shadow;
+        border: none;
+    }
 }
 
 .language_ru,
@@ -128,4 +135,12 @@ header {
     border: none;
     border-radius: 5px;
     padding: 17px 26px;
+    &:hover {
+        background: $gradient-seventh;
+        transition: .3s;
+    }
+    &:hover img {
+        transform: scale(1.1);
+        transition: .3s;
+    }
 }
