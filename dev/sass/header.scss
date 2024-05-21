@@ -1,14 +1,13 @@
 header {
-    background: url('assets/img/backgroung.png') center top/1920px no-repeat;
+    background: url('assets/img/backgroung.png') center top/cover no-repeat;
 }
 
 .header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
-    margin-top: 33px;
-    margin-bottom: 33px;
+    padding-top: 33px;
+    padding-bottom: 33px;
     a {
         text-decoration: none;
     }
@@ -21,9 +20,10 @@ header {
 
 .nav_list {
     display: flex;
-    gap: 80px;
+    gap: 65px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: auto;
     a {
         font-weight: 700;
         font-size: 17px;
@@ -61,7 +61,7 @@ header {
     }
 }
 
-.nice-select {
+.header_container .nice-select {
     border: none;
     font-size: 17px;
     font-weight: 700;
@@ -74,6 +74,7 @@ header {
     color: $subtitle-color;
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
     margin-right: 15px;
+    margin-left: auto;
     &:after,
     &.open:after {
     border: 7px solid transparent;

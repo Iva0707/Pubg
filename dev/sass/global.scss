@@ -34,7 +34,7 @@ a:focus {
 }
 
 .container {
-    max-width: 1488px;
+    max-width: 1380px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px;
@@ -98,6 +98,10 @@ a:focus {
 
 .color__item_10 {
     background: $gradient-seventh;
+}
+
+.color__item_11 {
+    background: $gradient-eighth;
 }
 
 .markup__text_container span {
@@ -253,7 +257,7 @@ h6,
 
 .btn-secondary {
     position: relative;
-    padding: 24px 38px;
+    padding: 26px 38px;
     background: transparent;
     border: none;
     border-radius: 5px;
@@ -310,14 +314,15 @@ h6,
 .btn:active,
 .btn:focus {
     color: $subtitle-color;
-    background: $gradient-sixth;
     transition: 0.3s;
+    opacity: 0.95;
 }
 
-.btn-secondary:hover:before,
-.btn-secondary:active:before,
-.btn-secondary:focus:before {
-    background: $gradient-sixth;
+.markup__buttons_container .btn-secondary:hover:before,
+.markup__buttons_container .btn-secondary:active:before,
+.markup__buttons_container .btn-secondary:focus:before {
+    background-color: #fe0000;
+    opacity: 1;
 }
 
 .btn:hover .icon {
