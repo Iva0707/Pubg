@@ -314,17 +314,18 @@ h6,
 .btn:active,
 .btn:focus {
     color: $subtitle-color;
+    background: $gradient-sixth;
     transition: 0.3s;
-    opacity: 0.95;
 }
 
-.markup__buttons_container .btn-secondary:hover:before,
-.markup__buttons_container .btn-secondary:active:before,
-.markup__buttons_container .btn-secondary:focus:before {
-    background-color: #fe0000;
-    opacity: 1;
+.btn-secondary:hover:before,
+.btn-secondary:active:before,
+.btn-secondary:focus:before {
+    background: $gradient-sixth;
 }
 
-.btn:hover .icon {
+.btn:hover .icon,
+.btn:active .icon,
+.btn:focus .icon {
     filter: invert(100%) sepia(0%) saturate(0%) brightness(180%) contrast(101%);
 }  
