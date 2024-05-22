@@ -1,4 +1,6 @@
-@media screen and (max-width: 1199px) {    
+@media screen and (max-width: 1199px) {  
+// ______header______
+  
     .nav_list {
         gap: 25px;
     }
@@ -6,4 +8,44 @@
     .header_btn {
         padding: 17px 17px;
     }
+
+// ______first screen______
+
+    .first_screen_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        & p {
+            text-align: center;
+        }
+        & p:first-of-type:before {
+            left: 287px;
+        }
+    }
+
+    .first_screen_title {
+        text-align: center;
+        &:before {
+            left: 29px;
+        }
+        &:after {
+            left: 19px;
+            top: 8px;
+        }
+    }
+
+    .first_screen_btn_container {
+        justify-content: center;
+    }
+
+    .first_screen_img {
+        left: -150px;
+    }
+
+    .first_screen_car_img {
+        display: none;
+    }
+
 }

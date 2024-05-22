@@ -1,5 +1,6 @@
 body {
     background-color: $background-color;
+    overflow-x: hidden;
 }
 
 ::selection {
@@ -253,18 +254,17 @@ h6,
 
 
 .btn-info {
-    padding: 24px 34px 24px 43px;
+    padding: 24px 34px 24px 48px;
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
-
     .icon {
-        margin-left: 36px;
+        margin-left: 31px;
         transition: 0.3s;
     }
 }
 
 .btn-secondary {
     position: relative;
-    padding: 26px 38px;
+    padding: 26px 39px;
     background: transparent;
     border: none;
     border-radius: 5px;

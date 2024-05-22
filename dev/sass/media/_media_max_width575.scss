@@ -1,3 +1,55 @@
 @media screen and (max-width: 575px) {
-    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+// ______first screen______
+
+    .first_screen_content {
+        & p {
+            font-size: 12px;
+            line-height: 19px;
+        }
+        & p:first-of-type {
+            max-width: 325px;
+            margin-bottom: 15px;
+        }
+        & p:first-of-type:before {
+            left: 108px;
+            top: -18px;
+        }
+        & p:last-of-type {
+            margin-bottom: 24px;
+        }
+    }
+
+    .first_screen_title {
+        font-size: 30px;
+        max-width: 380px;
+        margin-top: 26px;
+        line-height: 39px;
+        margin-bottom: 27px;
+        &:before {
+            left: 37px;
+            top: 9px;
+        }
+        &:after {
+            left: 32px;
+            top: 4px;
+        }
+    }
+
+    .first_screen_btn_container {
+        & .btn {
+            padding: 17px 22px 17px 23px;
+            font-size: 13px;
+        }
+    }
+
+    .first_screen_img {
+        left: -40px;
+        max-width: 267px;
+    }
+
 }

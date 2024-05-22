@@ -1,4 +1,5 @@
 @media screen and (max-width: 991px) {
+// ______header______
     .header_btn {
         display: none;
     }
@@ -13,6 +14,7 @@
         padding-right: 9px;
         height: 36px;
         margin-left: 0;
+        margin-right: 0;
     }
 
     .nice-select:after {
@@ -24,12 +26,15 @@
     }
 
     .header_container {
-        padding: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     
     .header_logo {
         order: 2;
         margin: 0 15px;
+        padding-bottom: 10px;
+        padding-left: 31px;
     }
 
     .burger_container {
@@ -53,10 +58,10 @@
             transition: .3s;
         }
         &:before {
-            top: 0px;
+            top: -2px;
         }
-        &:after {
-            top: 12px;
+        &:after{
+            top: 10px;
         }
         &:hover:before,
         &:hover:after {
@@ -111,4 +116,43 @@
         height: 36px;
         margin-right: 0px;
     }
+
+// ______first screen______
+
+    .first_screen_title {
+        font-size: 46px;
+        line-height: 58px;
+        margin-bottom: 40px;
+        &:before {
+            left: 68px;
+            top: 22px;
+        }
+        &:after {
+            left: 58px;
+            top: 13px;
+        }
+    }
+
+    .first_screen_content {
+        & p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        & p:first-of-type {
+            margin-bottom: 28px;
+            max-width: 512px;
+        }
+        & p:first-of-type:before {
+            left: 200px;
+            top: -23px;
+        }
+        & p:last-of-type {
+            margin-bottom: 30px;
+        }
+    }
+
+    .first_screen_img {
+        left: -100px;
+    }
+
 }
