@@ -4,6 +4,16 @@
         padding-right: 15px;
     }
 
+// ______header______
+
+    .nav_list {
+        gap: 25px;
+        padding: 25px 40px;
+        & a {
+            font-size: 15px;
+        }
+    }
+
 // ______first screen______
 
     .first_screen_content {
