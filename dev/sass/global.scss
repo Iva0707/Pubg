@@ -9,7 +9,7 @@ body {
 
 ul li,
 ol li {
-  list-style: none;
+    list-style: none;
 }
 
 a {
@@ -22,6 +22,7 @@ a:active,
 a:focus {
     color: $color-first-before;
     text-decoration: underline;
+
     &:focus {
         outline: none;
     }
@@ -51,6 +52,7 @@ a:focus {
     align-items: center;
     color: $subtitle-color;
 }
+
 .color__item {
     max-width: 300px;
     height: 100px;
@@ -135,43 +137,46 @@ a:focus {
 .ul_first li {
     position: relative;
     padding-left: 28px;
+
     &:before {
-    content: "";
-    position: absolute;
-    background-color: $color-first-before;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    left: 0px;
-    top: 7px;
+        content: "";
+        position: absolute;
+        background-color: $color-first-before;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        left: 0px;
+        top: 7px;
     }
 }
 
 .ul_second li {
     position: relative;
     padding-left: 35px;
+
     &:before {
-    content: "";
-    position: absolute;
-    background: url('assets/img/icon_check.svg') no-repeat;
-    width: 23px;
-    height: 18px;
-    left: 0px;
-    top: 3px;
+        content: "";
+        position: absolute;
+        background: url('assets/img/icon_check.svg') no-repeat;
+        width: 23px;
+        height: 18px;
+        left: 0px;
+        top: 3px;
     }
 }
 
 .ul_third li {
     position: relative;
     padding-left: 35px;
+
     &:before {
-    content: "";
-    position: absolute;
-    background: url('assets/img/icon_close.svg') no-repeat;
-    width: 18px;
-    height: 18px;
-    left: 0px;
-    top: 3px;
+        content: "";
+        position: absolute;
+        background: url('assets/img/icon_close.svg') no-repeat;
+        width: 18px;
+        height: 18px;
+        left: 0px;
+        top: 3px;
     }
 }
 
@@ -230,6 +235,7 @@ h6,
     font-size: 18px;
     font-weight: 600;
 }
+
 .markup__buttons_container button {
     margin-bottom: 10px;
 }
@@ -247,8 +253,9 @@ h6,
 
 
 .btn-info {
-    padding: 24px 34px 24px 43px;  
-    box-shadow: 0 20px 35px 0 $color-bnt-shadow;  
+    padding: 24px 34px 24px 43px;
+    box-shadow: 0 20px 35px 0 $color-bnt-shadow;
+
     .icon {
         margin-left: 36px;
         transition: 0.3s;
@@ -263,27 +270,29 @@ h6,
     border-radius: 5px;
     text-align: center;
     z-index: 1;
+
     &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: 5px;
-      padding: 1px;
-      background: $gradient-border;
-      mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 5px;
+        padding: 1px;
+        background: $gradient-border;
+        mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        z-index: -1;
     }
 }
 
 .btn-primary {
     padding: 25px 34px 25px 35px;
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
+
     .icon {
         margin-left: 18px;
         transition: 0.3s;
@@ -293,8 +302,9 @@ h6,
 .btn-warning {
     padding: 22px 29px 22px 29px;
     background: $color-red;
+
     .icon {
-        margin-left: 18px;;
+        margin-left: 18px;
         transition: 0.3s;
     }
 }
@@ -304,6 +314,7 @@ h6,
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
     border-radius: 0 0 5px 55px;
     background: $gradient-seventh;
+
     .icon {
         margin-left: 22px;
         transition: 0.3s;
@@ -312,20 +323,34 @@ h6,
 
 .btn:hover,
 .btn:active,
-.btn:focus {
+.btn-secondary:hover:before,
+.btn-secondary:active:before,
+:not(.btn-check) + .btn:active,
+:not(.btn-check) + .btn-primary:active,
+.btn-info:first-child:active {
     color: $subtitle-color;
-    background: $gradient-sixth;
+    transform: scale(1.05);
     transition: 0.3s;
 }
 
-.btn-secondary:hover:before,
-.btn-secondary:active:before,
-.btn-secondary:focus:before {
-    background: $gradient-sixth;
+.btn:focus {
+    color: $subtitle-color;
+}
+
+:not(.btn-check)+.btn-secondary:active,
+.btn-secondary:hover {
+    color: $subtitle-color;
+    background-color: unset;
+}
+
+.btn-warning:hover,
+:not(.btn-check) + .btn-warning:active {
+    background-color: $color-red;
 }
 
 .btn:hover .icon,
 .btn:active .icon,
 .btn:focus .icon {
-    filter: invert(100%) sepia(0%) saturate(0%) brightness(180%) contrast(101%);
-}  
+    filter: brightness(0) saturate(100%) invert(20%) sepia(50%) saturate(447%) hue-rotate(184deg) brightness(94%) contrast(95%);
+    transition: 0.3s;
+}
