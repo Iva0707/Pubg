@@ -48,6 +48,13 @@
             left: 32px;
             top: 4px;
         }
+        & span {
+            width: 26px;
+            height: 33px;
+        }
+        & span:before {
+            left: -4px;
+        }
     }
 
     .first_screen_btn_container {
