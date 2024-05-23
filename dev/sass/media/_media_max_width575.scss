@@ -43,6 +43,9 @@
         margin-top: 92px;
         line-height: 39px;
         margin-bottom: 27px;
+        &:before {
+            margin: -4px 0px 0px -17px;
+        }
         & span {
             width: 26px;
             height: 33px;
