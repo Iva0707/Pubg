@@ -1,5 +1,5 @@
 .first_screen_page {
-    background: url('assets/img/backgroung.png') center top/cover no-repeat;
+    background: url('assets/img/bg_top.png') center top/cover no-repeat;
 }
 
 .first_screen_container {
@@ -36,26 +36,17 @@
 .first_screen_title {
     color: $title-color;
     max-width: 615px;
-    margin-top: 64px;
+    margin-top: 191px;
     margin-bottom: 53px;
     line-height: 68px;
     position: relative;
-    &:before,
-    &:after {
-        content: '';
-        width: 40px;
-        height: 8px;
-        background-color: $color-first-before;
-        transform: rotate(-45deg);
-        position: absolute;
-    }
     &:before {
-        top: 18px;
-        left: -15px;
-    }
-    &:after {
-        top: 6px;
-        left: -26px;
+        content: '';
+        background: url('assets/img/icon_title_first_screen.svg') no-repeat;
+        width: 46px;
+        height: 46px;
+        margin: -9px 0px 0px -23px;
+        position: absolute;
     }
     & span {
         width: 49px;

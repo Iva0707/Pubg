@@ -21,19 +21,13 @@
             text-align: center;
         }
         & p:first-of-type:before {
-            left: 287px;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
     }
 
     .first_screen_title {
         text-align: center;
-        &:before {
-            left: 29px;
-        }
-        &:after {
-            left: 19px;
-            top: 8px;
-        }
     }
 
     .first_screen_btn_container {

@@ -1,6 +1,5 @@
 @media screen and (max-width: 767px) {
 // ______first screen______
-
     .first_screen_content {
         & p {
             font-size: 14px;
@@ -10,7 +9,6 @@
             max-width: 372px;
         }
         & p:first-of-type:before {
-            left: 132px;
             height: 3px;
             top: -23px;
         }
@@ -20,18 +18,8 @@
         font-size: 34px;
         max-width: 385px;
         line-height: 48px;
-        &:before,
-        &:after {
-            width: 22px;
-            height: 4px;
-        }
         &:before {
-            left: 22px;
-            top: 10px;
-        }
-        &:after {
-            left: 17px;
-            top: 5px;
+            margin: -3px 0px 0px -14px;
         }
         & span {
             width: 33px;
