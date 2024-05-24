@@ -5,6 +5,7 @@
 .first_screen_container {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .first_screen_content {
@@ -39,6 +40,7 @@
     margin-top: 191px;
     margin-bottom: 53px;
     line-height: 68px;
+    text-transform: uppercase;
     position: relative;
     &:before {
         content: '';
@@ -83,7 +85,7 @@
     & img {
         position: absolute;
         left: 0px;
-        bottom: 20%;
+        bottom: 225px;
         max-width: 125%;
     }
 }
