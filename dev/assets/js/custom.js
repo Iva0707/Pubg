@@ -1,10 +1,6 @@
 // _____fancybox_____
 Fancybox.bind("[data-fancybox]", {});
 
-// _____slick_____
-$('.single-item').slick();
-
-
 // _____niceSelect_____
 $(document).ready(function() {
     $('select').niceSelect();
@@ -36,4 +32,17 @@ myFunction(mediaQuery);
 
 mediaQuery.addEventListener("change", function() {
   myFunction(mediaQuery);
+});
+
+
+// _____swiper_____
+const swiper = new Swiper('.slider_phone', {  
+  spaceBetween: 40,
+  loop: true,
+  pagination: false,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: false,
 });
