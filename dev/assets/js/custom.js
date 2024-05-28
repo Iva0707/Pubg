@@ -18,20 +18,27 @@ function showNav(){
 burger.addEventListener('click', showNav);
 
 
-// _____nav_menu_____
+const parent = document.querySelector(".use_container");
+const child_1 = document.querySelector(".use_title_container");
+const child_3 = document.querySelector(".use_description_container");
+
+// _____queryFunction_____
 const mediaQuery = window.matchMedia("(min-width: 991px)")
-function myFunction(mediaQuery) {
+function queryFunction(mediaQuery) {
   if (mediaQuery.matches) { 
     navSection.removeAttribute('style')
+    child_3.prepend(child_1)
+     
   } else {
+    parent.prepend(child_1)
     navSection.style.transition = '0.3s';
   }
 }
 
-myFunction(mediaQuery);
+queryFunction(mediaQuery);
 
 mediaQuery.addEventListener("change", function() {
-  myFunction(mediaQuery);
+  queryFunction(mediaQuery);
 });
 
 

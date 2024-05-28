@@ -157,14 +157,12 @@
         left: -100px;
     }
 
-// ______use______
+// ______use page______
     .use_container {
-        grid-template-columns: 100%; 
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "title"
-            "mobile"
-            "description";
+        flex-direction: column;
     }
 
+    .use_mobile_container {
+        max-width: 100%;
+    }
 }

@@ -1,20 +1,17 @@
 .use_container {
-    display: grid;
-    grid-template-columns: 50% 50%; 
-    grid-template-rows: 30% auto;
-    grid-template-areas:
-        "mobile title"
-        "mobile description";
-    justify-content: center;
-    gap: 50px 20px;
+    display: flex;
+    max-height: 1169px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    gap: 6px;
 }
 
 .use_mobile_container {
-    grid-row: span 2;
-    grid-area: mobile;
     background-color: rgb(228, 250, 228);
-    margin-top: 150px;
+    max-width: 50%;
     & .slider_phone {
+        margin-top: 55px;
         overflow: hidden;
         position: relative;
         min-height: 700px; 
@@ -55,18 +52,18 @@
 }
 
 .use_title_container {
-    grid-area: title;
     background-color: rgb(250, 250, 176);
-    margin-top: 55px;
-    justify-self: center;
-    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     & .use_title {
         text-transform: uppercase;
         color: #2e3a59;
-        margin-bottom: 25px;
+        margin-bottom: 23px;
         position: relative;
+        max-width: 366px;
         &:before,
         &:after {
             content: '';
@@ -78,25 +75,30 @@
         }
         &:before {
             top: 0;
-            left: 45px;
+            left: 0;
+            background-color: red;
+            margin: 6px 0px 0px -18px;
         }
         &:after {
             bottom: 0;
-            right: 45px;
+            right: 0;
+            background-color: green;
+            margin: 0px -22px 5px 0;
         }
     }
     & p {
         font-size: 18px;
         color: #828282;
-        line-height: 28px;
-        max-width: 505px;
+        line-height: 30px;
+        max-width: 495px;
     }
 }
 
 .use_description_container {
-    grid-area: description;
     background-color: rgb(254, 177, 177);
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     & .use_des_title {
         text-transform: uppercase;
     }
@@ -115,19 +117,16 @@
     }
     & .use_des_content {
         border-radius: 5px;
-        width: 649px;
-        height: 87px;
         box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.04);
         background: #fff;
         display: flex;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 57px;
         & p {
             font-size: 18px;
             color: #828282;
             line-height: 28px;
             margin: 0;
+            padding: 29px 52px 29px 26px;
             & img {
                 padding-right: 19px;
             }
@@ -136,6 +135,7 @@
     & .use_des_btn {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 23px;
     }
 }
