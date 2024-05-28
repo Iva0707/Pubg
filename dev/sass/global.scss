@@ -1,6 +1,7 @@
 body {
     background-color: $background-color;
     overflow-x: hidden;
+    color: $subtitle-color;
 }
 
 ::selection {
@@ -353,4 +354,45 @@ h6,
 .btn:focus .icon {
     filter: brightness(0) saturate(100%) invert(20%) sepia(50%) saturate(447%) hue-rotate(184deg) brightness(94%) contrast(95%);
     transition: 0.3s;
+}
+
+.template_title {
+    text-transform: uppercase;
+    position: relative;
+    &:before {
+        content: '';
+        background: url('assets/img/icon_title_first_screen.svg') no-repeat;
+        width: 46px;
+        height: 46px;
+        margin: -13px 0px 0px -24px;
+        position: absolute;
+    }
+}
+
+.template_title_light {
+    color: $title-color;
+}
+
+.template_title_double {
+    &:before,
+    &:after {
+        content: '';
+        width: 40px;
+        height: 8px;
+        background-color: $color-first-before;
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+    &:before {
+        margin: 6px 0px 0px -22px;
+    }
+    &:after {
+        margin: 41px 0px 0px -15px;
+    }
+}
+
+.template_title_colored {
+    &:after {
+        background-color: $text-color-accent;
+    }
 }
