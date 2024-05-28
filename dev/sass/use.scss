@@ -6,12 +6,8 @@
         "mobile title"
         "mobile description";
     justify-content: center;
-    // gap: 50px 20px;
+    gap: 50px 20px;
 }
-
-
-
-
 
 .use_mobile_container {
     grid-row: span 2;
@@ -70,6 +66,24 @@
         text-transform: uppercase;
         color: #2e3a59;
         margin-bottom: 25px;
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            width: 40px;
+            height: 8px;
+            background-color: $color-first-before;
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+        &:before {
+            top: 0;
+            left: 45px;
+        }
+        &:after {
+            bottom: 0;
+            right: 45px;
+        }
     }
     & p {
         font-size: 18px;
@@ -78,11 +92,6 @@
         max-width: 505px;
     }
 }
-
-
-
-
-
 
 .use_description_container {
     grid-area: description;
