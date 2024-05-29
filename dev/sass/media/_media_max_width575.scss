@@ -1,7 +1,42 @@
 @media screen and (max-width: 575px) {
+// ______global______
     .container {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .template_title {
+        font-size: 30px;
+        &:before {
+            background: url(assets/img/icon_title_first_screen_mob.svg) no-repeat;
+            width: 26px;
+            height: 26px;
+            margin: -6px 0px 0px -14px;
+        }
+    }
+    
+    .template_title_double {
+        &:before,
+        &:after {
+            content: '';
+            width: 23px;
+            height: 5px;
+            background-color: $color-first-before;
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+        &:before {
+            margin: 1px 0px 0px -10px;
+        }
+        &:after {
+            margin: 30px 0px 0px -8px;
+        }
+    }
+    
+    .template_title_colored {
+        &:after {
+            background-color: $text-color-accent;
+        }
     }
 
 // ______header______
@@ -66,5 +101,75 @@
         left: -40px;
         max-width: 267px;
     }
+
+// ______use page______
+
+    .use_page_container {
+        margin-top: 27px;
+    }
+    
+    .use_title_container {
+        margin-bottom: 38px;
+        & .use_title {
+            margin-bottom: 17px;
+        }
+        & p {
+            font-size: 12px;
+            line-height: 24px;
+            max-width: 362px;
+            margin-bottom: 23px;
+        }
+        & .use_title_device_container {
+            gap: 10px;
+        }
+    }
+    
+    .use_mobile_container {
+        max-width: 100%;
+        & .slider_phone {
+            min-height: 472px;
+            margin-bottom: 20px;
+        }
+        & .arrow_container {
+            max-width: 130px;
+            top: 94%;
+        }
+    }
+    
+    .use_content_container {
+        & .ul_first {
+            padding: 0 20px 0 24px;
+            & li {
+                font-size: 12px;
+                margin-bottom: 18px;
+                &:before {
+                    width: 8px;
+                    height: 8px;
+                    top: 5px;
+                }
+            }
+        }
+        & .use_content_btn {
+            & .btn-primary {
+                padding: 17px 22px 17px 23px;
+                font-size: 13px;
+                & .icon {
+                    margin-left: 13px;
+                    width: 32px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }

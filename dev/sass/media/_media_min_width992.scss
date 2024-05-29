@@ -3,4 +3,16 @@
     .burger {
         display: none;
     }
+
+    .use_title_container {
+        & .use_title_device_container {
+            display: none;
+        }
+    }
+
+    .use_content_container {
+        & .use_content_title {
+            display: none;
+        }
+    }
 }

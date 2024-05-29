@@ -8,11 +8,13 @@ $(document).ready(function() {
 
 // _____burger_____
 const burger = document.querySelector('#burger');
+const body = document.querySelector('body');
 const navSection = document.querySelector('.nav_list');
 
 function showNav(){
   navSection.classList.toggle('show');
   burger.classList.toggle('show');
+  body.classList.toggle('overflow-hidden');
 }
 
 burger.addEventListener('click', showNav);

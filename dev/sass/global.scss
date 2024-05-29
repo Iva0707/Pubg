@@ -2,6 +2,19 @@ body {
     background-color: $background-color;
     overflow-x: hidden;
     color: $subtitle-color;
+    &.overflow-hidden {
+        &:before {
+            content: '';
+            width: 100vw;
+            height: 100vh;
+            background-color: #0aa6fe91;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            backdrop-filter: blur(6px);
+        }
+    }   
 }
 
 ::selection {
@@ -110,6 +123,10 @@ a:focus {
 
 .color__item_11 {
     background: $gradient-eighth;
+}
+
+.color__item_12 {
+    background: $color-icon-text;
 }
 
 .markup__text_container span {
@@ -263,7 +280,7 @@ h6,
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
     .icon {
         margin-left: 31px;
-        transition: 0.3s;
+        transition: .2s;
     }
 }
 
@@ -300,7 +317,7 @@ h6,
 
     .icon {
         margin-left: 18px;
-        transition: 0.3s;
+        transition: .2s;
     }
 }
 
@@ -310,7 +327,7 @@ h6,
 
     .icon {
         margin-left: 18px;
-        transition: 0.3s;
+        transition: .2s;
     }
 }
 
@@ -322,7 +339,7 @@ h6,
 
     .icon {
         margin-left: 22px;
-        transition: 0.3s;
+        transition: .2s;
     }
 }
 
@@ -335,7 +352,7 @@ h6,
 .btn-info:first-child:active {
     color: $subtitle-color;
     transform: scale(1.05);
-    transition: 0.3s;
+    transition: .2s;
 }
 
 .btn:focus {
@@ -357,7 +374,7 @@ h6,
 .btn:active .icon,
 .btn:focus .icon {
     filter: brightness(0) saturate(100%) invert(20%) sepia(50%) saturate(447%) hue-rotate(184deg) brightness(94%) contrast(95%);
-    transition: 0.3s;
+    transition: .2s;
 }
 
 .template_title {
