@@ -158,11 +158,8 @@
     }
 
 // ______use page______
-    .use_container {
+    .use_page_container{
         flex-direction: column;
-    }
-
-    .use_mobile_container {
-        max-width: 100%;
+        align-items: center;
     }
 }
