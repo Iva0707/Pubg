@@ -1,8 +1,6 @@
-.use_container {
+.use_page_container {
     display: flex;
-    max-height: 1169px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1185px;
     margin-top: 55px;
 }
 
@@ -12,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 37px;
     & .use_title {
         margin-bottom: 23px;
     }
@@ -26,10 +24,15 @@
 
 .use_mobile_container {
     background-color: rgb(228, 250, 228);
-    max-width: 50%;
+    // max-width: 50%;
+    // display: flex;
+    // justify-content: flex-start;
+    max-width: 360px;
     width: 100%;
+    & .test {
+    }
     & .slider_phone {
-        margin-top: 55px;
+        margin-top: 93px;
         overflow: hidden;
         position: relative;
         min-height: 700px; 
@@ -69,49 +72,52 @@
     }
 }
 
-.use_description_container {
+.use_content_container {
     background-color: rgb(254, 177, 177);
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 50%;
+    // max-width: 50%;
     width: 100%;
-    & .use_des_title {
+    & .use_content_title {
         text-transform: uppercase;
     }
     & .ul_first {
         padding: 0;
-        margin-bottom: 63px;
+        margin-bottom: 30px;
         & li {
             font-size: 18px;
             text-align: justify;
-            margin-bottom: 53px;
+            margin-bottom: 37px;
+            // margin-left: 43px;
             & span {
                 font-weight: 700;
             }
         }
     }
-    & .use_des_content {
+    & .use_content_text {
         border-radius: 5px;
         box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.04);
         background: #fff;
         display: flex;
         margin-bottom: 57px;
+        // margin-left: 26px;
         & p {
             font-size: 18px;
             color: #828282;
             line-height: 28px;
             margin: 0;
-            padding: 29px 52px 29px 26px;
+            padding: 29px 37px 29px 26px;
             & img {
                 padding-right: 19px;
             }
         }
     }
-    & .use_des_btn {
+    & .use_content_btn {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 23px;
+        // margin-left: 65px;
     }
 }

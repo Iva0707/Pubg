@@ -17,12 +17,12 @@ function showNav(){
 
 burger.addEventListener('click', showNav);
 
-
-const parent = document.querySelector(".use_container");
-const child_1 = document.querySelector(".use_title_container");
-const child_3 = document.querySelector(".use_description_container");
-
 // _____queryFunction_____
+
+const parent = document.querySelector(".use_page_container");
+const child_1 = document.querySelector(".use_title_container");
+const child_3 = document.querySelector(".use_content_container");
+
 const mediaQuery = window.matchMedia("(min-width: 991px)")
 function queryFunction(mediaQuery) {
   if (mediaQuery.matches) { 
