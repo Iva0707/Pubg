@@ -58,4 +58,19 @@
         left: 0px;
         max-width: 437px;
     }
+
+// ______use page______
+
+    .use_content_container {
+        & .use_content_btn {
+            & .btn {
+                padding: 18px 27px 20px 27px;
+                font-size: 15px;
+            }
+            & .btn-primary .icon {
+                margin-left: 13px;
+                width: 32px;
+            }
+        }
+    }
 }

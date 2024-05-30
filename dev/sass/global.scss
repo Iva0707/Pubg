@@ -129,6 +129,10 @@ a:focus {
     background: $color-icon-text;
 }
 
+.color__item_13 {
+    background: $gradient-ninth;
+}
+
 .markup__text_container span {
     background: $color-select;
 }
@@ -159,7 +163,7 @@ a:focus {
 
 .ul_first li {
     position: relative;
-    padding-left: 25px;
+    padding-left: 24px;
 
     &:before {
         content: "";
@@ -349,7 +353,8 @@ h6,
 .btn-secondary:active:before,
 :not(.btn-check) + .btn:active,
 :not(.btn-check) + .btn-primary:active,
-.btn-info:first-child:active {
+.btn-info:first-child:active,
+.btn-primary:first-child:active {
     color: $subtitle-color;
     transform: scale(1.05);
     transition: .2s;

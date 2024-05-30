@@ -42,4 +42,16 @@
         display: none;
     }
 
+// ______use page______
+
+    .use_mobile_container {
+        max-width: 40%;
+    }
+
+    .use_content_container {
+        max-width: 60%;
+        & .use_content_text p {
+            font-size: 17px;
+        }
+    }
 }

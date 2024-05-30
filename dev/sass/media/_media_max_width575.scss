@@ -53,6 +53,7 @@
 
     .first_screen_page {
         background: url('assets/img/bg_top_mob.png') center top/cover no-repeat;
+        padding-bottom: 227px;
     }
 
     .first_screen_content {
@@ -105,7 +106,7 @@
 // ______use page______
 
     .use_page_container {
-        margin-top: 27px;
+        margin-top: -200px;
     }
     
     .use_title_container {
@@ -151,25 +152,10 @@
         }
         & .use_content_btn {
             & .btn-primary {
-                padding: 17px 22px 17px 23px;
+                padding: 17px 24px 18px 26px;
                 font-size: 13px;
-                & .icon {
-                    margin-left: 13px;
-                    width: 32px;
-                }
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
 
 }

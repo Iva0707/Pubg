@@ -14,4 +14,14 @@
         max-width: 100%;
     }
 
+// ______use page______
+
+    .use_content_container {
+        & .use_content_text p {
+            padding: 29px 5px 29px 5px;
+            & img {
+                padding-right: 8px;
+            }
+        }
+    }
 }
