@@ -40,7 +40,7 @@
             }
         }
         & div:last-child {
-            background: linear-gradient(128deg, #0aa6fe 0%, #05ffff 100%);
+            background: $gradient-ninth;
             color: $title-color;
         }
     }
