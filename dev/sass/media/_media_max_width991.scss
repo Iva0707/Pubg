@@ -221,6 +221,7 @@
         margin-bottom: 30px;
             & img {
                 max-width: 212px;
+                filter: drop-shadow(-25px 35px 15px $color-img-shadow-light);
             }
         }
         & .arrow_container {
