@@ -7,37 +7,16 @@
 
     .template_title {
         font-size: 30px;
-        &:before {
-            background: url(assets/img/icon_title_first_screen_mob.svg) no-repeat;
-            width: 26px;
-            height: 26px;
-            margin: -6px 0px 0px -14px;
+        &.template_title_double {
+            &:before {
+                margin: 1px 0px 0px -10px;
+            }
+            &:after {
+                margin: 30px 0px 0px -8px;
+            }
         }
     }
     
-    .template_title_double {
-        &:before,
-        &:after {
-            content: '';
-            width: 23px;
-            height: 5px;
-            background-color: $color-first-before;
-            position: absolute;
-            transform: rotate(-45deg);
-        }
-        &:before {
-            margin: 1px 0px 0px -10px;
-        }
-        &:after {
-            margin: 30px 0px 0px -8px;
-        }
-    }
-    
-    .template_title_colored {
-        &:after {
-            background-color: $color-blue;
-        }
-    }
 
 // ______header______
 

@@ -8,31 +8,23 @@
             height: 26px;
             margin: -6px 0px 0px -14px;
         }
-    }
-    
-    .template_title_double {
-        &:before,
-        &:after {
-            content: '';
-            width: 23px;
-            height: 5px;
-            background-color: $color-first-before;
-            position: absolute;
-            transform: rotate(-45deg);
-        }
-        &:before {
-            margin: 6px 0px 0px -10px;
-        }
-        &:after {
-            margin: 36px 0px 0px -10px;
+        &.template_title_double {
+            &:before,
+            &:after {
+                content: '';
+                width: 23px;
+                height: 5px;
+            }
+            &:before {
+                margin: 6px 0px 0px -10px;
+            }
+            &:after {
+                margin: 36px 0px 0px -10px;
+            }
         }
     }
     
-    .template_title_colored {
-        &:after {
-            background-color: $color-blue;
-        }
-    }
+    
 
     // ______header______
     header {
