@@ -44,8 +44,20 @@ mediaQuery.addEventListener("change", function() {
 });
 
 
-// _____swiper_____
-const swiper = new Swiper('.slider_phone', {  
+// _____swiper_use_____
+const swiperUse = new Swiper('.slider_phone', {  
+  spaceBetween: 40,
+  loop: true,
+  pagination: false,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: false,
+});
+
+// _____swiper_about_us_____
+const swiperAboutUs = new Swiper('.about_us_slider', {  
   spaceBetween: 40,
   loop: true,
   pagination: false,
