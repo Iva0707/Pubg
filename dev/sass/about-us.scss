@@ -113,6 +113,12 @@
         & .swiper-button-next:after {
             transform: rotate(225deg);
         }
+        & .swiper-button-next:hover,
+        & .swiper-button-prev:hover {
+            filter: drop-shadow(0 0 15px #013c5c53);
+            transition: all .2s;
+            transform: scale(1.01);
+        }
 
     }
 }
