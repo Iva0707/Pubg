@@ -55,7 +55,7 @@
         }
     }
 
-// ______about us______
+// ______about us page______
 
     .about_us_slider {
         & .slide_content {
@@ -64,5 +64,22 @@
         & .arrow_container {
             max-width: 809px;
         }
+    }
+
+
+// ______price page______
+    .price_container .price_container_item .price_container_content ul li {
+        font-size: 16px;
+    }
+
+    ul .ul_second {
+        padding-left: 31px;
+    }
+    .price_container_item .btn-lg {
+        padding: 24px 40px 24px 75px;
+    }
+
+    .price_container {
+        gap: 25px;
     }
 }
