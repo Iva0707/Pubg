@@ -73,4 +73,17 @@
             }
         }
     }
+
+// ______about us page______
+
+    .about_us_slider {
+        & .slide_content {
+            padding: 82px 15px 23px 15px;
+            & .content_feedback {
+                & span {
+                    display: inline;
+                }
+            }
+        } 
+    }
 }

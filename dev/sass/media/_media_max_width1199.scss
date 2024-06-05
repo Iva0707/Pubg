@@ -54,4 +54,15 @@
             font-size: 17px;
         }
     }
+
+// ______about us______
+
+    .about_us_slider {
+        & .slide_content {
+            max-width: 773px;
+        }
+        & .arrow_container {
+            max-width: 809px;
+        }
+    }
 }

@@ -48,6 +48,7 @@ mediaQuery.addEventListener("change", function() {
 const swiperUse = new Swiper('.slider_phone', {  
   spaceBetween: 40,
   loop: true,
+  speed: 500,
   pagination: false,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -58,10 +59,11 @@ const swiperUse = new Swiper('.slider_phone', {
 
 // _____swiper_about_us_____
 const swiperAboutUs = new Swiper('.about_us_slider', {  
-  spaceBetween: 40,
+  spaceBetween: 20,
   loop: true,
+  speed: 600,
   pagination: false,
-  navigation: {
+    navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },

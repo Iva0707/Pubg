@@ -86,6 +86,7 @@
 
     .use_page {
         margin-top: -200px;
+        margin-bottom: -34px;
     }
     
     .use_title_container {
@@ -136,5 +137,60 @@
             }
         }
     }
+// ______amout us page______
+    .about-us-page {
+        background: url('assets/img/about_us_bg_img_mob.png') center top/cover no-repeat;
+        padding-bottom: 60px;
+        padding-top: 101px;
+    }
+
+    .about_us_container h2 {
+        margin-bottom: 27px;
+    }
+
+    .about_us_slider {
+        & .slide_container {
+            padding: 31px 0px;
+            &:before {
+                background: url('assets/img/about_us_content_img_mob.png') no-repeat;
+                width: 65px;
+                height: 65px;
+            }
+        }
+        & .slide_content {
+            padding: 39px 15px 23px 15px;
+            &:before,
+            &:after {
+                background: url("assets/img/about_us_icon_mob.svg") no-repeat;
+                width: 31px;
+                height: 24px;
+            }
+            &:before {
+                top: -16px;
+            }
+            &:after {
+                bottom: -16px;
+            }
+            & .content_name {
+                font-size: 13px;
+                margin-bottom: 11px;
+                &:after {
+                    width: 19px;
+                    height: 7px;
+                    right: -27px;
+                }
+            }
+            & .content_feedback {
+                font-size: 11px;
+                line-height: 15px;
+                max-width: 321px;
+                & span {
+                    display: inline;
+                }
+            }
+        }
+    }
+
+
 
 }

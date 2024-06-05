@@ -257,4 +257,33 @@
         }
     }
 
+// ______about us page______
+
+    .about_us_slider {
+        & .slide_content {
+            padding: 82px 79px 39px 79px;
+        }
+        & .arrow_container {
+            max-width: 137px;
+            top: calc(100% - 13px);
+            transform: translate(-50%, 0);
+            & .swiper-button-next:after,
+            & .swiper-button-prev:after {
+                height: 28px;
+                min-width: 54px;
+            }
+            & .swiper-button-next:after {
+                transform: rotate(0);
+                background-image: url("data:image/svg+xml,%3Csvg width='54' height='28' viewBox='0 0 54 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M39.375 28L54 14L39.375 -1.90735e-06L37.7843 1.52277L49.6935 12.9231L0 12.9231V15.0769L49.6935 15.0769L37.7843 26.4772L39.375 28Z' fill='white'/%3E%3C/svg%3E%0A");
+            }
+            & .swiper-button-prev:after {
+                transform: rotate(0);
+                background-image: url("data:image/svg+xml,%3Csvg width='54' height='28' viewBox='0 0 54 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.625 0L0 14L14.625 28L16.2157 26.4772L4.3065 15.0769H54V12.9231H4.3065L16.2157 1.52277L14.625 0Z' fill='white' fill-opacity='0.2'/%3E%3C/svg%3E%0A");
+            }
+            & .swiper-button-next:hover,
+            & .swiper-button-prev:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
 }

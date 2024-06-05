@@ -5,7 +5,6 @@
 }
 
 .about_us_container {
-
     & h2 {
         text-align: center;
         margin-bottom: 29px;
@@ -24,14 +23,13 @@
             background: url('assets/img/about_us_content_img.png') no-repeat;
             width: 117px;
             height: 117px;
-            top: 1px;
+            top: 0px;
             left: 50%;
             transform: translate(-50%, 0);
             position: absolute;
             z-index: 1;
         }
     }
-
     & .slide_content {
         display: flex;
         flex-direction: column;
@@ -61,7 +59,6 @@
             right: 0;
             transform: rotate(180deg);
         }
-
         & p {
             margin: 0;
             text-align: center;
@@ -108,7 +105,6 @@
             background-repeat: no-repeat;
             filter: drop-shadow(0 0 25px #025f9553);
             transform: rotate(45deg);
-
         }
         & .swiper-button-next:after {
             transform: rotate(225deg);
@@ -119,6 +115,5 @@
             transition: all .2s;
             transform: scale(1.01);
         }
-
     }
 }
