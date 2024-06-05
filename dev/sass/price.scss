@@ -2,18 +2,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 73px;
+    margin-bottom: 1000px;
+    & h2 {
+        margin-bottom: 64px;
+    }
 }
 
 .price_device_container {
     display: flex;
     gap: 16px;
+    margin-bottom: 58px;
     & div {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 18px;
         font-weight: 700;
-        padding: 22px 30px 22px 30px;
+        padding: 18px 30px 18px 30px;
         background-color: $title-color;
         box-shadow: 0 15px 25px 0 $color-bnt-shadow;
         border-radius: 5px;
@@ -29,6 +35,68 @@
         color: $title-color;
         & img {
             min-width: 30px;
+        }
+    }
+}
+
+.price_container {
+    display: flex;
+    gap: 36px;
+    & .price_container_item {
+        max-width: 416px;
+        border-radius: 5px 55px;
+        box-shadow: 0 20px 35px 0 $color-container-shadow;
+        background: $title-color;
+        & .price_container_title {
+            color: $title-color;
+            max-width: 100%;
+            box-shadow: 0 20px 35px 0 $color-container-shadow;
+            border-radius: 5px 55px 0 55px;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 23px;
+            padding-bottom: 23px;
+            &.blue_bg {
+                background: $gradient-third;
+            }
+            &.violet_bg {
+                background: $gradient-fourth;
+            }
+            &.red_bg {
+                background: $gradient-fifth;
+            }
+        }
+        & .price_container_content {
+            padding: 23px 10px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & .price_container_term {
+                font-weight: 600;
+                font-size: 30px;
+                margin-bottom: 26px;
+            }
+            & ul {
+                padding: 0;
+                margin-bottom: 1px;
+                & li {
+                font-size: 18px;
+                padding-bottom: 21px;
+                }
+            }
+            & .price_container_value {
+                font-weight: 600;
+                font-size: 45px;
+                position: relative;
+                &:after {
+                    content: '₽';
+                    position: absolute;
+                    font-weight: 500;
+                    font-size: 35px;
+                    right: -39px;
+                    top: -6px;
+                }
+            }
         }
     }
 }
