@@ -1,0 +1,34 @@
+.price_page_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price_device_container {
+    display: flex;
+    gap: 16px;
+    & div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 22px 30px 22px 30px;
+        background-color: $title-color;
+        box-shadow: 0 15px 25px 0 $color-bnt-shadow;
+        border-radius: 5px;
+        color: $color-icon-text;
+        & img {
+            margin-right: 17px;
+            min-width: 33px;
+            height: auto;
+        }
+    }
+    & .device_ios {
+        background: $gradient-ninth;
+        color: $title-color;
+        & img {
+            min-width: 30px;
+        }
+    }
+}
