@@ -1,5 +1,5 @@
 .first_screen_page {
-    background: url('assets/img/bg_top.png') center top/cover no-repeat;
+    background: url('assets/img/first_screen_bg_top.png') center top/cover no-repeat;
     margin-bottom: 505px;
 }
 
@@ -59,7 +59,7 @@
     }
     & span:before{
         content: '';
-        background: url('assets/img/icon_pubg.svg') no-repeat;
+        background: url('assets/img/first_screen_icon_pubg.svg') no-repeat;
         top: 13px;
         left: -8px;
         position: absolute;
