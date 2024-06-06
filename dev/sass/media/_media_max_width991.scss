@@ -286,4 +286,23 @@
             }
         }
     }
+
+// ______price page______
+        .price_container {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .price_container .price_container_item .price_container_content ul li {
+            font-size: 18px;
+        }
+    
+        ul .ul_second {
+            padding-left: 35px;
+        }
+        .price_container_item .btn-lg {
+            padding: 24px 100px 24px 130px;
+        }
+
+
 }

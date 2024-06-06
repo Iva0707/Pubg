@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 73px;
-    margin-bottom: 1000px;
+    margin-bottom: 30px;
     & h2 {
         margin-bottom: 64px;
     }
@@ -56,6 +56,7 @@
             text-transform: uppercase;
             padding-top: 23px;
             padding-bottom: 23px;
+            margin: 0;
             &.blue_bg {
                 background: $gradient-third;
             }
@@ -67,7 +68,7 @@
             }
         }
         & .price_container_content {
-            padding: 23px 10px 12px;
+            padding: 31px 10px 12px;
             display: flex;
             flex-direction: column;
             align-items: center;

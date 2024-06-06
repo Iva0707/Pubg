@@ -86,4 +86,64 @@
             }
         } 
     }
+
+
+// ______price page______
+
+    .price_page_section h2 {
+        margin-bottom: 44px;
+    }
+
+    .price_device_container {
+        margin-bottom: 50px;
+    }
+
+    .price_container .price_container_item .price_container_content {
+        padding: 25px 10px 22px;
+    }
+
+    .price_container .price_container_item .price_container_content ul li {
+        font-size: 16px;
+        padding-bottom: 14px;
+    }
+
+    .price_container .price_container_item .price_container_content .price_container_value {
+        font-size: 40px;
+    }
+
+    .price_container .price_container_item .price_container_content .price_container_value:after {
+        font-size: 30px;
+        right: -33px;
+    }
+
+    .price_container .price_container_item .btn {
+        font-size: 17px;
+    }
+
+    .price_device_container {
+        gap: 20px;
+        & div {
+            font-size: 12px;
+            padding: 19px 17px 18px 17px;
+            & img {
+                margin-right: 11px;
+                min-width: 18px;
+            }
+        }
+        & .device_ios {
+            & img {
+                min-width: 16px;
+            }
+        }
+    }
+
+    .price_container .price_container_item .price_container_title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .price_container .price_container_item .price_container_content ul {
+        margin-bottom: 11px;
+    }
+    
 }
