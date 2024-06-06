@@ -68,7 +68,7 @@
         position: absolute;
         width: 100%;
         left: 50%;
-        top: 98%;
+        top: calc(100% - 16px);
         transform: translate(-50%, 0);
         max-width: 150px;
         z-index: 2;

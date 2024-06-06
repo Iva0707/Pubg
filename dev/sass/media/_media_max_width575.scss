@@ -113,7 +113,7 @@
         }
         & .arrow_container {
             max-width: 130px;
-            top: 94%;
+            top: calc(100% - 27px);
         }
     }
     

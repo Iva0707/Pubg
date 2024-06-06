@@ -214,11 +214,11 @@
         margin-bottom: 30px;
             & img {
                 max-width: 212px;
-                filter: drop-shadow(-25px 35px 15px $color-img-shadow-light);
+                filter: drop-shadow(-25px 15px 15px $color-img-shadow-light);
             }
         }
         & .arrow_container {
-            top: 96%;
+            top: calc(100% - 34px);
             & .swiper-button-next:after,
             & .swiper-button-prev:after {
                 height: 28px;
