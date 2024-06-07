@@ -251,4 +251,44 @@
             }
         }
     }
+
+    // ______questions page______
+
+    .question_page_section {
+        margin-top: 83px;
+        & .template_title {
+            margin-bottom: 50px;
+        }
+        & .accordion {
+            margin-bottom: 28px;
+            & .accordion-item {
+                margin-bottom: 24px;
+                & .accordion-button {
+                    font-size: 13px;
+                    padding: 24px 16px 24px 23px;
+                    &:before,
+                    &:after {
+                        height: 2px;
+                        width: 18px;
+                        right: 18px;
+                    }
+                }
+            }
+            & .accordion-body {
+                font-size: 11px;
+                padding: 22px 30px 22px 44px;
+                margin-top: -22px;
+                line-height: 16px;
+                &:before {
+                    left: 25px;
+                    height: calc(100% - 44px);
+                }
+            }
+        }
+        & .questions_link a {
+            font-size: 13px;
+        }
+    }
+
+
 }
