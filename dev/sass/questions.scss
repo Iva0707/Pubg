@@ -12,6 +12,9 @@
         --bs-accordion-border-radius: 5px;  
         --bs-accordion-inner-border-radius: 5px;
         margin-bottom: 41px;
+        & .accordion-collapse {
+            box-shadow: 0 15px 25px 0 $color-container-shadow;
+        }
         & .accordion-item {
             margin-bottom: 22px;
             & .accordion-button {
