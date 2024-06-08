@@ -1,0 +1,40 @@
+.contact_section {
+    & .template_title {
+        text-align: center;
+    }
+
+    & .contact_container {
+        display: flex;
+        & .img_box {
+            background-color: rgb(212, 252, 239);
+            width: 50%;
+        }
+        & .input_container {
+            background-color: rgb(213, 212, 252);
+            width: 50%;
+            & .input_title {
+                font-weight: 600;
+                font-size: 18px;
+            }
+            & .input_row {
+                display: flex;
+            }
+            & .input_box {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                & .contact_icon {
+                    max-width: 20px;
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+            }
+            & .btn {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
