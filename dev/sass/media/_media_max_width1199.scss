@@ -83,8 +83,20 @@
         gap: 25px;
     }
 
-// ______questions page______
+// ______contact page______
 
-
+    .contact_section {
+        & .contact_container {
+            & .img_box {
+                & img {
+                    max-width: 120%;
+                    margin-left: -20px;
+                }
+            }
+            & .input_container form {
+                margin-left: 5px;
+            }
+        }
+    }
 
 }

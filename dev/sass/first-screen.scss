@@ -1,6 +1,19 @@
 .first_screen_page {
     background: url('assets/img/first_screen_bg_top.png') center top/cover no-repeat;
-    margin-bottom: 505px;
+    // margin-bottom: 505px;
+    margin-bottom: 193px;
+    position: relative;
+    z-index: 0;
+    &:after {
+        content: '';
+        position: absolute;
+        background: url(assets/img/first_screen_bg_snow.png) top/cover no-repeat;
+        height: 193px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
 }
 
 .first_screen_container {

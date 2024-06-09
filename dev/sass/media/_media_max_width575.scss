@@ -32,7 +32,12 @@
 
     .first_screen_page {
         background: url('assets/img/first_screen_bg_top_mob.png') center top/cover no-repeat;
-        margin-bottom: 227px;
+        // margin-bottom: 227px;
+        margin-bottom: 108px;
+        &:after {
+            background: url(assets/img/first_screen_bg_snow_mob.png) top/cover no-repeat;
+            height: 108px;
+        }
     }
 
     .first_screen_content {
@@ -85,7 +90,8 @@
 // ______use page______
 
     .use_page {
-        margin-top: -200px;
+        // margin-top: -200px;
+        margin-top: 0px;
         margin-bottom: -34px;
     }
     

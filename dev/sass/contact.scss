@@ -1,3 +1,7 @@
+.contact-page {
+    background: url(assets/img/contact_bg.png) top/cover no-repeat;
+}
+
 .contact_section {
     & .template_title {
         text-align: center;
@@ -5,6 +9,12 @@
     }
     & .contact_container {
         display: flex;
+        & .img_box {
+            // background-color: yellowgreen;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
         & .input_container {
             & form {
                 min-width: 644px;
