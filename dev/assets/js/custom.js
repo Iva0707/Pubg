@@ -19,8 +19,15 @@ function showNav(){
 
 burger.addEventListener('click', showNav);
 
-// _____queryFunction_____
+var navLink = $(".nav_link"); 
 
+$(navLink).click(function(){
+  body.classList.remove('overflow-hidden');
+  navSection.classList.remove('show');
+  burger.classList.remove('show');
+});
+
+// _____queryFunction_____
 const parent = document.querySelector(".use_page_container");
 const child_1 = document.querySelector(".use_title_container");
 const child_3 = document.querySelector(".use_content_container");
@@ -42,7 +49,6 @@ queryFunction(mediaQuery);
 mediaQuery.addEventListener("change", function() {
   queryFunction(mediaQuery);
 });
-
 
 // _____swiper_use_____
 const swiperUse = new Swiper('.slider_phone', {  
