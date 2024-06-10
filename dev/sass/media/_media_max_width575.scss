@@ -32,8 +32,7 @@
 
     .first_screen_page {
         background: url('assets/img/first_screen_bg_top_mob.png') center top/cover no-repeat;
-        // margin-bottom: 227px;
-        margin-bottom: 108px;
+        margin-bottom: 27px;
         &:after {
             background: url(assets/img/first_screen_bg_snow_mob.png) top/cover no-repeat;
             height: 108px;
@@ -90,7 +89,6 @@
 // ______use page______
 
     .use_page {
-        // margin-top: -200px;
         margin-top: 0px;
         margin-bottom: -34px;
     }
@@ -258,10 +256,11 @@
         }
     }
 
-    // ______questions page______
+// ______questions page______
 
     .question_page_section {
         margin-top: 83px;
+        margin-bottom: 73px;
         & .template_title {
             margin-bottom: 50px;
         }
@@ -294,6 +293,55 @@
         & .questions_link a {
             font-size: 13px;
         }
+    }
+
+// ______contact page______
+
+    .contact_section .contact_container .input_container form {
+        min-width: 336px;
+        padding: 46px 28px 23px 28px;
+    }
+
+    .contact_section .contact_container .input_container form .input_title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .contact_section .contact_container .input_container form .input_title {
+        margin-bottom: 26px;
+    }
+
+    .input_box {
+        & input,
+        & textarea {
+            &::placeholder {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .contact_section .template_title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .contact_section .contact_container .input_container form .input_btn .btn {
+        font-size: 13px;
+        padding: 17px 35px;
+    }
+
+    .contact_section .contact_container .input_container form .input_row {
+        gap: 25px;
+        margin-bottom: 35px;
+    }
+
+    .contact_section .contact_container .input_container form .input_row .input_box label {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .contact_section .contact_container .input_container form .input_row .input_box textarea {
+        padding: 5px 10px;
     }
 
 
