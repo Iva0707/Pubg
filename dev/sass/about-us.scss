@@ -16,8 +16,8 @@
     position: relative;
     overflow: hidden;
     & .slide_container {
-        padding: 46px 0px;
         position: relative;
+        padding: 46px 0px 64px;
         &:before {
             content: '';
             background: url('assets/img/about_us_content_img.png') no-repeat;
