@@ -32,15 +32,15 @@ const parent = document.querySelector(".use_page_container");
 const child_1 = document.querySelector(".use_title_container");
 const child_3 = document.querySelector(".use_content_container");
 
-const mediaQuery = window.matchMedia("(min-width: 991px)")
+const mediaQuery = window.matchMedia("(max-width: 991px)")
 function queryFunction(mediaQuery) {
   if (mediaQuery.matches) { 
-    navSection.removeAttribute('style')
-    child_3.prepend(child_1)
-     
-  } else {
     parent.prepend(child_1)
     navSection.style.transition = '0.3s';
+     
+  } else {
+    navSection.removeAttribute('style')
+    child_3.prepend(child_1)
   }
 }
 
