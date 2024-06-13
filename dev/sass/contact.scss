@@ -73,7 +73,6 @@
                             top: 50%;
                             left: 0px;
                             transform: translateY(-50%);
-                            max-width: 18px;
                         }
                         & label {
                             font-size: 14px;
@@ -81,6 +80,7 @@
                             margin-bottom: 8px;
                             & img {
                                 margin-right: 10px;
+                                max-width: 18px;
                             }
                         }
                         & input,

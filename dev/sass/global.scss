@@ -178,10 +178,10 @@ a:focus {
 }
 
 ul {
-    & .ul_second {
+    & .ul_second,
+    & .ul_third {
         position: relative;
         padding-left: 35px;
-
         &:before {
             content: "";
             position: absolute;
@@ -192,22 +192,18 @@ ul {
             top: 3px;
         }
     }
-
-    & .ul_third {
-        position: relative;
-        padding-left: 35px;
-
+    & .ul_second {
         &:before {
-            content: "";
-            position: absolute;
-            background: url('assets/img/icon_close.svg') no-repeat;
-            width: 18px;
-            height: 18px;
-            left: 0px;
-            top: 3px;
+            background: url('assets/img/icon_check.svg') no-repeat;
+            width: 23px;
         }
     }
-
+    & .ul_third {
+        &:before {
+            background: url('assets/img/icon_close.svg') no-repeat;
+            width: 18px;
+        }
+    }
 }
 
 .fw_400 {
@@ -288,6 +284,7 @@ h6,
     .icon {
         margin-left: 31px;
         transition: .2s;
+        max-width: 54px;
     }
 }
 
@@ -321,20 +318,20 @@ h6,
 .btn-primary {
     padding: 25px 34px 25px 35px;
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
-
     .icon {
         margin-left: 18px;
         transition: .2s;
+        max-width: 44px;
     }
 }
 
 .btn-warning {
     padding: 22px 29px 22px 29px;
     background: $color-red;
-
     .icon {
         margin-left: 18px;
         transition: .2s;
+        max-width: 33px;
     }
 }
 
@@ -343,10 +340,10 @@ h6,
     box-shadow: 0 20px 35px 0 $color-bnt-shadow;
     border-radius: 0 0 5px 55px;
     background: $gradient-seventh;
-
     .icon {
         margin-left: 22px;
         transition: .2s;
+        max-width: 44px;
     }
 }
 
