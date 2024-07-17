@@ -17,8 +17,10 @@ header {
 }
 
 .header_logo {
-    font-size: 17px;
-    color: $title-color;
+    & img {
+        max-width: 118px;
+        height: auto;
+    }
 }
 
 .nav_list {
