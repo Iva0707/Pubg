@@ -146,6 +146,9 @@
         background: url('assets/img/about_us_bg_img_mob.png') center top/cover no-repeat;
         padding-bottom: 29px;
         padding-top: 101px;
+        // &:before {  
+        //     display: none;
+        // }
     }
 
     .about_us_container h2 {
@@ -351,5 +354,4 @@
             }
         }
     }
-
 }

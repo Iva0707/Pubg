@@ -19,14 +19,14 @@
         & .input_container {
             & form {
                 min-width: 644px;
-                background-color: #ffffff;
+                background-color: $title-color;
                 margin-left: 82px;
                 margin-right: 82px;
                 padding: 48px 32px 33px 62px;
                 border-radius: 5px;
                 position: relative;
                 margin-top: 66px;
-                box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.03);
+                box-shadow: 0 15px 25px 0 $color-container-shadow;
                 &:before,
                 &:after {
                     content: '';
@@ -34,7 +34,7 @@
                     width: 116px;
                     height: 116px;
                     transform: rotate(-45deg);
-                    filter: drop-shadow(0 0 25px rgba(2, 95, 149, 0.3254901961));
+                    filter: drop-shadow(0 0 25px $color-filter-shadow);
                 }
                 &:before {
                     bottom: -62px;
@@ -66,7 +66,7 @@
                             height: 1px;
                             left: 0;
                             bottom: -5px;
-                            background-color: rgba(46, 58, 89, 0.43);
+                            background-color: $text-color-placeholder;
                         }
                         & .contact_icon {
                             position: absolute;
@@ -76,7 +76,7 @@
                         }
                         & label {
                             font-size: 14px;
-                            color: rgba(46, 58, 89, 0.43);
+                            color: $text-color-placeholder;
                             margin-bottom: 8px;
                             & img {
                                 margin-right: 10px;
@@ -93,7 +93,7 @@
                             }
                             &::placeholder {
                                 font-size: 14px;
-                                color: #2e3a596e;
+                                color: $text-color-placeholder;
                             }
                         }
                         & textarea {
@@ -105,10 +105,12 @@
                 & .input_btn {
                     display: flex;
                     margin-bottom: 6px;
+                    z-index: 1;
+                    position: relative;
                     & .btn {
                         margin-left: auto;
                         margin-right: auto;
-                        box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+                        box-shadow: 0 20px 35px 0 $color-bnt-shadow;
                     }
                 }
             }

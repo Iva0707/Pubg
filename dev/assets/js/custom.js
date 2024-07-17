@@ -14,7 +14,7 @@ const navSection = document.querySelector('.nav_list');
 function showNav(){
   navSection.classList.toggle('show');
   burger.classList.toggle('show');
-  body.classList.toggle('overflow-hidden');
+  body.classList.toggle('overflow_hidden');
 }
 
 burger.addEventListener('click', showNav);
@@ -22,10 +22,12 @@ burger.addEventListener('click', showNav);
 var navLink = $(".nav_link"); 
 
 $(navLink).click(function(){
-  body.classList.remove('overflow-hidden');
+  body.classList.remove('overflow_hidden');
   navSection.classList.remove('show');
   burger.classList.remove('show');
 });
+
+
 
 // _____queryFunction_____
 const parent = document.querySelector(".use_page_container");

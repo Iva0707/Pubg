@@ -273,6 +273,13 @@
 
 // ______about us page______
 
+    .about-us-page {
+        background: url('assets/img/about_us_bg_img.png') top/cover no-repeat;
+        &::before {
+            display: none;
+        }
+    }
+
     .about_us_slider {
         & .slide_content {
             padding: 82px 79px 39px 79px;
@@ -339,7 +346,7 @@
         &:after {
             content: "";
             position: absolute;
-            background: url('assets/img/Vector 12.png') top / cover no-repeat;
+            background: url('assets/img/contact_bg_mob_after.png') top / cover no-repeat;
             height: 431px;
             top: 0;
             left: 0;

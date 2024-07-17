@@ -2,7 +2,8 @@ body {
     background-color: $background-color;
     overflow-x: hidden;
     color: $subtitle-color;
-    &.overflow-hidden {
+    &.overflow_hidden {
+        overflow: hidden;
         &:before {
             content: '';
             width: 100vw;
