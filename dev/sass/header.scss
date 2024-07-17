@@ -72,8 +72,8 @@ header {
     font-size: 17px;
     font-weight: 700;
     height: 58px;
-    padding-left: 61px;
-    padding-right: 36px;
+    padding-left: 13px;
+    padding-right: 34px;
     transition: .2s;
     display: flex;
     align-items: center;
@@ -105,35 +105,6 @@ header {
         box-shadow: 0 20px 35px 0 $color-bnt-shadow;
         border: none;
     }
-}
-
-.language_ru,
-.language_ua,
-.language_en {
-    position: relative;
-}
-
-.language_ru:before,
-.language_ua:before,
-.language_en:before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 16px;
-    height: 100%;
-    width: 40px;
-}
-
-.language_ru:before {
-    background: url('assets/img/icon_ru.svg') no-repeat;
-}
-
-.language_ua:before {
-    background: url('assets/img/icon_ua.svg') no-repeat;
-}
-
-.language_en:before {
-    background: url('assets/img/icon_eng.svg') no-repeat;
 }
 
 .header_btn {

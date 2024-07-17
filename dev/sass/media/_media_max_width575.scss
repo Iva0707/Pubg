@@ -297,52 +297,59 @@
 
 // ______contact page______
 
-    .contact_section .contact_container .input_container form {
-        min-width: 336px;
-        padding: 46px 28px 23px 28px;
-    }
-
-    .contact_section .contact_container .input_container form .input_title {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .contact_section .contact_container .input_container form .input_title {
-        margin-bottom: 26px;
-    }
-
-    .input_box {
-        & input,
-        & textarea {
-            &::placeholder {
-                font-size: 13px;
+    .contact-page {
+        margin-bottom: -67px;
+        padding-bottom: 112px;
+        &:after {
+            display: none;
+        }
+        & .container::before {
+            height: 279px;
+            bottom: -98px;
+            left: -110px;
+        }
+        & .contact_section {
+            & .template_title {
+                text-align: center;
+                margin-bottom: 32px;
+            }
+            & .contact_container {
+                & .input_container {
+                    & form {
+                        min-width: 336px;
+                        padding: 46px 28px 23px 28px;
+                        & .input_title {
+                            font-size: 14px;
+                            text-align: center;
+                            margin-bottom: 26px;
+                        }
+                        & .input_row {
+                            gap: 25px;
+                            margin-bottom: 35px;
+                            & .input_box {
+                                & input,
+                                & textarea {
+                                    &::placeholder {
+                                        font-size: 13px;
+                                    }
+                                }
+                                & label {
+                                    font-size: 13px;
+                                    margin-bottom: 0px;
+                                }
+                                & textarea {
+                                    padding: 5px 10px;
+                                }
+                            }
+                        }
+                        & .input_btn .btn {
+                            font-size: 13px;
+                            padding: 17px 35px;
+                        }
+                    }
+                }
             }
         }
     }
-
-    .contact_section .template_title {
-        text-align: center;
-        margin-bottom: 32px;
-    }
-
-    .contact_section .contact_container .input_container form .input_btn .btn {
-        font-size: 13px;
-        padding: 17px 35px;
-    }
-
-    .contact_section .contact_container .input_container form .input_row {
-        gap: 25px;
-        margin-bottom: 35px;
-    }
-
-    .contact_section .contact_container .input_container form .input_row .input_box label {
-        font-size: 13px;
-        margin-bottom: 0px;
-    }
-
-    .contact_section .contact_container .input_container form .input_row .input_box textarea {
-        padding: 5px 10px;
-    }
-
 
 }

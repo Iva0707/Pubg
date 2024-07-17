@@ -1,16 +1,16 @@
 .about-us-page {
     padding-bottom: 49px;
     padding-top: 250px;
-    position: relative;
-    &:before {
-        content: '';
-        position: absolute;
-        background: url('assets/img/about_us_bg_img.png') top/cover no-repeat;
-        min-height: 800px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
+    background: url('assets/img/about_us_bg_img.png') top/cover no-repeat;
+    // position: relative;
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     min-height: 800px;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    // }
 }
 
 .about_us_container {

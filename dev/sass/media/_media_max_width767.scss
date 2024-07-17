@@ -179,17 +179,24 @@
 
     // ______contact page______
 
-    .contact_section .contact_container .input_container form {
-        min-width: 516px;
-        padding: 45px 28px 29px 28px;
+    .contact_section {
+        & .contact_container {
+            & .input_container {
+                & form {
+                    min-width: 516px;
+                    padding: 45px 28px 29px 28px;
+                    & .input_title {
+                        font-size: 16px;
+                    }
+                    & .input_btn {
+                        & .btn {
+                            font-size: 15px;
+                            padding: 20px 40px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .contact_section .contact_container .input_container form .input_title {
-        font-size: 16px;
-    }
-
-    .contact_section .contact_container .input_container form .input_btn .btn {
-        font-size: 15px;
-        padding: 20px 40px;
-    }
 }

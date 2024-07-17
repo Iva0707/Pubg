@@ -11,8 +11,8 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 2;
             backdrop-filter: blur(6px);
+            z-index: 2;
         }
     }   
 }
@@ -419,5 +419,3 @@ h6,
         }
     }
 }
-
-
